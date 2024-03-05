@@ -29,7 +29,7 @@ public class Main  {
                 System.out.println ("Autumn");
                 break;
             default:
-                System.out.println ("Invalid month number");
+                System.out.println ("Invalid month number ");
         }
     }
 }
