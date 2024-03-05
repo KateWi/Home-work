@@ -10,7 +10,7 @@ public class Main {
         System.out.println("Введите количество месяцев");
         int n = sc.nextInt();
         float sum = 0;
-        for (int i = 1; i < n+1; i++)   {
+        for (int i = 1; i < n+1; i++)  {
             sum = cont + (cont * 7 / 100);
             cont = sum;
             //System.out.println("Справочно:сумма за " + i + " месяц: " + sum);
