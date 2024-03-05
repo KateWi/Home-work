@@ -11,7 +11,7 @@ public class Main {
         int n = sc.nextInt();
         float sum = 0;
         for (int i = 1; i < n+1; i++)   {
-            sum = cont + (float) (cont * 7 / 100);
+            sum = cont + (cont * 7 / 100);
             cont = sum;
             //System.out.println("Справочно:сумма за " + i + " месяц: " + sum);
             }
