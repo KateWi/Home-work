@@ -8,10 +8,10 @@ public class Main {
         int[] array = new int[5];
         Random r = new Random();
         for (int i = 0; i < array.length; i++) {
-            array[i] = r.nextInt();
-            System.out.println(array[i]);
+            array[i] = r.nextInt(100);
+            //System.out.print(array[i] + " ");
         }
-
+        System.out.println("Введите число: ");
         Scanner sc = new Scanner(System.in);
         int g = sc.nextInt();
         //for (int i : array) {

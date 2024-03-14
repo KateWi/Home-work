@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int g = sc.nextInt();
-        int[] array = new int[g];
-        System.out.print( " Цикл: ");
+        System.out.println("Enter array length ");
+        int[] array = new int[sc.nextInt()];
+        System.out.print(" Цикл: ");
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) (Math.random() * 100);
             System.out.print(array[i] + " ");
@@ -24,8 +24,8 @@ public class Main {
             }
             sum += j;
         }
-        System.out.println ("\n" + "Максимальное, минимальное, среднее значения: "+ "\n");
-        double avg = sum /array.length;
+        System.out.println("\n" + "Максимальное, минимальное, среднее значения: " + "\n");
+        double avg = sum / array.length;
         System.out.print(max + " " + min + " " + avg);
     }
 }
