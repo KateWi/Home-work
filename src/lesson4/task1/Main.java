@@ -9,20 +9,20 @@ public class Main {
         Random r = new Random();
         for (int i = 0; i < array.length; i++) {
             array[i] = r.nextInt(100);
-            //System.out.print(array[i] + " ");
+            System.out.print(array[i] + " ");
         }
         System.out.println("Введите число: ");
         Scanner sc = new Scanner(System.in);
         int g = sc.nextInt();
-        //for (int i : array) {
-        int a = 0;
+        boolean flag = false;
         for (int j : array) {
             if (j == g) {
                 System.out.println("Введённое число есть в массиве");
-                a++;
+                flag = true;
+                break;
             }
         }
-        if (a == 0) {
+        if (!flag) {
             System.out.println("Введённого числа нет в массиве");
         }
     }

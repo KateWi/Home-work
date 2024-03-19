@@ -9,6 +9,7 @@ public class Main {
         int count = 0;
         int index = 0;
         Random r = new Random();
+        //boolean flag = false;
         for (int i = 0; i < array.length; i++) {
             array[i] = r.nextInt(100);
             System.out.print(array[i] + " ");
@@ -21,7 +22,7 @@ public class Main {
                 count++;
             }
         }
-        if (count < array.length) {
+        if (count == array.length) {
             System.out.println("Введённого числа нет в массиве");
         }
         //System.out.println(count);//Длина нового массива
@@ -30,8 +31,6 @@ public class Main {
             if (array[i] != g) {
                 b[index] = array[i];
                 System.out.print(b[index] + " ");
-            } else {
-                i = i;
             }
         }
     }

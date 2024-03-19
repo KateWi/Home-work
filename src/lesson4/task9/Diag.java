@@ -19,7 +19,6 @@ public class Diag {
             sc.next();
         }
         int m = sc.nextInt();
-        int D = 0;
         int[][] array = new int[n][m];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
