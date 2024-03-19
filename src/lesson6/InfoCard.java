@@ -24,12 +24,12 @@ public class InfoCard {
         System.out.println("На вторую карту положить сумму, равную: ");
         card2.sum = sc.nextInt();
         card2.addAmount(card2.sum);
-        System.out.println("Текущее состояние первой карты: ");
+        System.out.println("Текущее состояние второй карты: ");
         card2.info();
         System.out.println("С тетьей карты снять сумму, равную: ");
         card3.sum = sc.nextInt();
         card3.removeAmount(card3.sum);
-        System.out.println("Текущее состояние первой карты: ");
+        System.out.println("Текущее состояние третьей карты: ");
         card3.info();
     }
 }
