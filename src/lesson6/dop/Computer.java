@@ -1,10 +1,10 @@
 package lesson6.dop;
 
 public class Computer {
-    double price;
-    String model;
-    RAM ram;
-    HDD hdd;
+    private double price;
+    private String model;
+    private RAM ram;
+    private HDD hdd;
 
     public Computer(double price, String model) {
         this.price = price;

@@ -2,9 +2,9 @@ package lesson6.dop;
 
 public class HDD {
 
-    String name;
-    double volume;
-    String type;
+   private String name;
+   private double volume;
+    private String type;
 
     public HDD() {
 

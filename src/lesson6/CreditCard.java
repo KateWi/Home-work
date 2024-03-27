@@ -1,8 +1,8 @@
 package lesson6;
 
 public class CreditCard {
-    String accountNumber; //Номер счета
-    double accountAmount; //сумма на счету
+    public String accountNumber; //Номер счета
+    public double accountAmount; //сумма на счету
 
     public CreditCard(String accountNumber, double accountAmount) {
         this.accountNumber = accountNumber;
@@ -14,12 +14,17 @@ public class CreditCard {
         accountAmount += sum;
     }
 
-    public void removeAmount(double sum) {
+   // public double removeAmount() {
+     //   return removeAmount(0.0);
+   // }
+
+    public double removeAmount(double sum) {
         if (accountAmount >= sum) {
             accountAmount -= sum;
         } else {
             System.out.println("Insufficient funds");
         }
+        return accountAmount;
     }
 
     public void cardInfo() {

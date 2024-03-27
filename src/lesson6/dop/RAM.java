@@ -1,8 +1,8 @@
 package lesson6.dop;
 
 public class RAM {
-    String name;
-    double volume;
+    private String name;
+    private double volume;
 
     public RAM() {
 
@@ -17,4 +17,21 @@ public class RAM {
         System.out.println("RAM name: " + name);
         System.out.println("RAM volume: " + volume);
     }
+
+    public double getVolume() {
+        return volume;
+    }
+
+    public void setVolume(double volume) {
+        this.volume = volume;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
 }
