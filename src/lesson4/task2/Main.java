@@ -1,6 +1,6 @@
 package lesson4.task2;
 
-import java.util.Arrays;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -19,6 +19,7 @@ public class Main {
         for (int i : array) {
             if (i == g) {
                 flag = true;
+                break;
             }
         }
         if (!flag) {
@@ -26,16 +27,15 @@ public class Main {
         } else {
             int count = 0;
             for (int i : array) {
-                int[] b = new int[count];
                 if (i != g) {
                     count++;
                 }
             }
             int[] newArray = new int[count];
             int index = 0;
-            for (int i = 0; i < array.length; i++) {
-                if (array[i] != g) {
-                    newArray[index] = array[i];
+            for (int j : array) {
+                if (j != g) {
+                    newArray[index] = j;
                     System.out.print(newArray[index] + " ");
                 }
             }

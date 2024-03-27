@@ -19,8 +19,8 @@ public class Main {
             System.out.print(array1[i] + " ");
         }
         int count = 0; //Длина нового массива
-        for (int i = 0; i < array1.length; i++) {
-            if (array1[i] % 2 == 0) {
+        for (int k : array1) {
+            if (k % 2 == 0) {
                 count++;
             }
         }
@@ -28,9 +28,9 @@ public class Main {
         System.out.println("\n Второй массив из чётных элементов: " + " " + "\n");
         int[] array2 = new int[count];
         int index = 0;
-        for (int i = 0; i < array1.length; i++) {
-            if (array1[i] % 2 == 0) {
-                array2[index] = array1[i];
+        for (int j : array1) {
+            if (j % 2 == 0) {
+                array2[index] = j;
                 System.out.print(array2[index] + " ");
             }
         }
