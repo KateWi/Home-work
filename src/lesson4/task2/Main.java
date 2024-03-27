@@ -1,15 +1,13 @@
 package lesson4.task2;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         int[] array = new int[8];
-        int count = 0;
-        int index = 0;
         Random r = new Random();
-        //boolean flag = false;
         for (int i = 0; i < array.length; i++) {
             array[i] = r.nextInt(100);
             System.out.print(array[i] + " ");
@@ -17,21 +15,31 @@ public class Main {
         System.out.println("Введите число:");
         Scanner sc = new Scanner(System.in);
         int g = sc.nextInt();
-        for (int j : array) {
-            if (j != g) {
-                count++;
+        boolean flag = false;
+        for (int i : array) {
+            if (i == g) {
+                flag = true;
             }
         }
-        if (count == array.length) {
+        if (!flag) {
             System.out.println("Введённого числа нет в массиве");
-        }
-        //System.out.println(count);//Длина нового массива
-        int[] b = new int[count];
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] != g) {
-                b[index] = array[i];
-                System.out.print(b[index] + " ");
+        } else {
+            int count = 0;
+            for (int i : array) {
+                int[] b = new int[count];
+                if (i != g) {
+                    count++;
+                }
+            }
+            int[] newArray = new int[count];
+            int index = 0;
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] != g) {
+                    newArray[index] = array[i];
+                    System.out.print(newArray[index] + " ");
+                }
             }
         }
     }
 }
+

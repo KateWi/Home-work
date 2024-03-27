@@ -10,16 +10,12 @@ public class Main {
             array1[i] = r.nextInt(100);
             System.out.print(array1[i] + " ");
         }
-        int[] array2 = new int[5]; //
-        int index = 0;
         System.out.println("\n" + "Массив после замены нечётных индексов: ");
         for (int i = 0; i < array1.length; i++) {
-            if (i % 2 > 0) {
-                array2[index] = 0;
-            } else {
-                array2[index] = array1[i];
+            if (array1[i] % 2 > 0) {
+                array1[i] = 0;
             }
-            System.out.print(array2[index] + " ");
+            System.out.print(array1[i] + " ");
         }
     }
 }
